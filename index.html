@@ -56,6 +56,13 @@
     background: var(--panel2); border: 1px solid var(--border2); color: var(--muted);
   }
   .badge b { color: var(--text); font-weight: 700; }
+  a.badge { text-decoration: none; }
+  .badge-live {
+    background: linear-gradient(135deg, #0ea5e9, #6366f1); border-color: transparent;
+    color: #fff; box-shadow: 0 8px 24px rgba(14,165,233,.3); transition: transform .15s ease;
+  }
+  .badge-live b { color: #fff; }
+  .badge-live:hover { transform: translateY(-2px); }
   .soon { font-size: 11px; background: rgba(56,189,248,.15); color: var(--blue);
     padding: 2px 8px; border-radius: 99px; }
 
@@ -116,7 +123,8 @@
     <div class="tagline">메트로 패스로 다니는 도쿄, 오프라인 길찾기</div>
     <div class="tagline-en">Offline Tokyo subway route finder · 한국어 · English · 中文</div>
     <div class="badges">
-      <span class="badge"> App Store <span class="soon">출시 예정</span></span>
+      <a class="badge badge-live" href="https://apps.apple.com/kr/app/id6805158717">
+         App Store <b>다운로드</b></a>
       <span class="badge">▶ Google Play <span class="soon">출시 예정</span></span>
     </div>
     <div class="stripe" aria-hidden="true">
